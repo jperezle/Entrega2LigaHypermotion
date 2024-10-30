@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Quantum';
+    src: url('font/QUANTU1H.TTF');
+  }
+  
+  body {
+    background-color: #ADD8E6; /* Azul celeste claro */
+  }
+  
+  body, h1, h2, p, a, nav, footer {
+    font-family: 'Quantum', sans-serif; /* Tipo de letra */
+    text-transform: uppercase;
+  }
+  
+  .img-fluid {
+    width: 100%;
+    height: 200px; /* height fija para todas las imagenes */
+    object-fit: cover; 
+  }
