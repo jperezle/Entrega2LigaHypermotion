@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        @font-face {
+            font-family: 'Quantum';
+            src: url('font/QUANTU1H.TTF');
+        }
+        body {
+            background-color: #ADD8E6; /* Azul celeste claro */
+        }
+        body, h1, h2, p, a, nav, footer {
+            font-family: 'Quantum', sans-serif; /* Cambia el tipo de letra a Decalotype ExtraBold */
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/LaLiga_Hypermotion_2023_Horizontal_Logo.svg" width="150" alt="LaLiga Hypermotion"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">INICIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="clasificacion.html">CLASIFICACIÓN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="interacciones.html">INTERACCIONES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="historia.html">HISTORIA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div style="height: 100px;"></div>
+    <div class="container">
+        <h1 class="text-center">Ficha por LaLiga</h1>
+
+        <h1 class="text-center">Trabaja en la mejor Liga del mundo</h1>
+        <form onsubmit="event.preventDefault(); document.getElementById('successMessage').style.display = 'block';">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Introduce tu nombre">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Introduce tu email">
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea class="form-control" id="mensaje" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        <div id="successMessage" class="alert alert-success mt-3" style="display: none;">
+            Su petición ha sido enviada correctamente.
+        </div>
+    </div>
+    <div style="height: 50px;"></div>
+    <footer class="bg-dark text-white text-center py-3 d-flex align-items-center justify-content-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/LaLiga_logo_2023.svg/1200px-LaLiga_logo_2023.svg.png" alt="Logo LaLiga" style="width: 50px; height: 50px; margin-right: 10px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Royal_Spanish_Football_Federation_logo.svg/640px-Royal_Spanish_Football_Federation_logo.svg.png" alt="Logo RFEF" style="width: 50px; height: 50px; margin: 0 10px;">
+        <p class="mb-0">&copy; 2024 LaLiga. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

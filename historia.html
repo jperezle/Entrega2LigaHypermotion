@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HISTORIA DE LA LIGA</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        @font-face {
+            font-family: 'Quantum';
+            src: url('font/QUANTU1H.TTF');
+        }
+        body {
+            background-color: #ADD8E6; /* Azul celeste claro */
+        }
+        body, h1, h2, p, a, nav, footer {
+            font-family: 'Quantum', sans-serif; /* Cambia el tipo de letra a Decalotype ExtraBold */
+            text-transform: uppercase;
+        }
+        .img-fluid {
+            width: 100%;
+            height: 200px; /* Set a fixed height for all images */
+            object-fit: cover; /* Ensures image covers the set dimensions */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/LaLiga_Hypermotion_2023_Horizontal_Logo.svg" width="150" alt="LaLiga Hypermotion"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">INICIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="clasificacion.html">CLASIFICACIÓN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="interacciones.html">INTERACCIONES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="historia.html">HISTORIA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div style="height: 50px;"></div> <!-- Add a gap between the navbar and the images -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4"><img src="https://assets.laliga.com/assets/2024/10/27/large/d14057c91ee22bbf2d05dd77d6e17a64.jpeg" alt="Image 1" class="img-fluid"></div>
+            <div class="col-md-4"><img src="https://piks.eldesmarque.com/thumbs/660/bin/2024/03/31/gkatpxtxsaap0pw.png" alt="Image 2" class="img-fluid"></div>
+            <div class="col-md-4"><img src="https://assets.laliga.com/assets/2024/10/27/large/bdfe6e70ee4d0c7365d85f9bc696882a.jpeg" alt="Image 3" class="img-fluid"></div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 my-5">
+                <h1 class="text-center">HISTORIA DE LA LIGA</h1>
+                <p class="text-justify">La Segunda División de España 2024-25 (denominada LALIGA Hypermotion por motivos de patrocinio) es la 94.ª edición del segundo nivel de competición profesional de fútbol en España. Organizado por la Liga Nacional de Fútbol Profesional (LFP), el torneo comenzó el 15 de agosto de 2024 y finalizará el 22 de junio de 2025, tras la disputa de la promoción de ascenso. </p>
+                <video width="100%" autoplay muted loop id="introVideo">
+                    <source src="img/introliga.mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
+                </video>
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary" style="width: 100%;" onclick="document.getElementById('introVideo').muted = false;">Activar Sonido</button>
+                    <button type="button" class="btn btn-secondary" style="width: 100%; margin-top: 10px;" onclick="document.getElementById('introVideo').muted = true;">Desactivar Sonido</button>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-4"><img src="https://assets.laliga.com/assets/2023/08/11/hl/f93b5dc62bc8ebbd5b145433340e7654.jpeg" alt="Image 4" class="img-fluid"></div>
+            <div class="col-md-4"><img src="https://www.hoyaragon.es/asset/thumbnail,1280,720,center,center/media/hoyaragon/images/2023/10/23/20231023074150184414.jpg" alt="Image 5" class="img-fluid"></div>
+            <div class="col-md-4"><img src="https://estaticos-cdn.prensaiberica.es/clip/3c7b88a6-c419-4787-8215-09c39f69e3df_16-9-discover-aspect-ratio_default_0.jpg" alt="Image 6" class="img-fluid"></div>
+        </div>
+    </div>
+    <div style="height: 50px;"></div> <!-- Add a gap between the images and the footer -->
+    <footer class="bg-dark text-white text-center py-3 d-flex align-items-center justify-content-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/LaLiga_logo_2023.svg/1200px-LaLiga_logo_2023.svg.png" alt="Logo LaLiga" style="width: 50px; height: 50px; margin-right: 10px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Royal_Spanish_Football_Federation_logo.svg/640px-Royal_Spanish_Football_Federation_logo.svg.png" alt="Logo RFEF" style="width: 50px; height: 50px; margin: 0 10px;">
+        <p class="mb-0">&copy; 2024 LaLiga. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
